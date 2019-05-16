@@ -11,14 +11,14 @@ echo 'deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted univ
 echo 'deb-src http://mirrors.aliyun.com/ubuntu/ bvionic-proposed main restricted universe multiverse' >> /etc/apt/sources.list
 
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y upgrade
 
-sudo apt-get install vim
+sudo apt-get -y install vim
 
-sudo apt-get install  lib32ncurses5 lib32z1
-sudo apt install python-pip
+sudo apt-get -y install  lib32ncurses5 lib32z1
+sudo apt -y install python-pip
 
-sudo apt install git
+sudo apt -y install git
 
 sudo git clone https://github.com/longld/peda.git ~/peda
 sudo echo "source ~/peda/peda.py" >> ~/.gdbinit
