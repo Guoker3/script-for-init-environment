@@ -8,7 +8,7 @@ echo 'deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted u
 echo 'deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse' >> /etc/apt/sources.list
 echo 'deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse' >> /etc/apt/sources.list
 echo 'deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse' >> /etc/apt/sources.list
-echo 'deb-src http://mirrors.aliyun.com/ubuntu/ bvionic-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+echo 'deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse' >> /etc/apt/sources.list
 
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -26,9 +26,9 @@ sudo echo "source ~/peda/peda.py" >> ~/.gdbinit
 cd /
 sudo mkdir git-misc-re
 
-cd /git-misc-re
+cd ./git-misc-re
 sudo git clone https://github.com/aquynh/capstone
-cd /git-miscre/capstone
+cd /git-misc-re/capstone
 sudo make
 sudo make install
 pip install setuptools
