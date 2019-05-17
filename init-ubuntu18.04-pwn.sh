@@ -45,6 +45,8 @@ pip install bcrypt
 pip install tox
 pip install pyserial
 pip install pynacl
+pip install capstone
+pip install MarkupSafe
 #安装pwntools
 mkdir ~/git-misc-re/pwntools
 sudo git clone https://github.com/Gallopsled/pwntools ~/git-misc-re/pwntools
