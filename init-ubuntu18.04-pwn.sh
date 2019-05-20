@@ -36,6 +36,12 @@ sudo git clone https://github.com/aquynh/capstone ~/git-misc-re/capstone
 cd ~/git-misc-re/capstone
 sudo make
 sudo make install
+
+#可能可以通过
+#pip install pwntools
+#直接安装
+
+
 #安装pwntools环境
 pip install setuptools
 pip install unicorn
