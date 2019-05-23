@@ -41,6 +41,8 @@ sudo make install
 #pip install pwntools
 #直接安装
 
+#可能通过修改pwntools的setup.py更改安装源
+
 
 #安装pwntools环境
 pip install setuptools
