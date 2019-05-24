@@ -1,9 +1,3 @@
-#官网版ubuntu18.04LTS初次进入安装图形界面概要
-#手动输入镜像源为http://mirrors.aliyun.com/ubuntu
-#  sudo apt install lightdm
-#  sudo apt-get install ubuntu-desktop
-#  reboot
-# 如果未进入ctrl+alt+F7或  sudo lightdm start  #  reboot
 #换阿里源
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
 echo 'deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse' > /etc/apt/sources.list
