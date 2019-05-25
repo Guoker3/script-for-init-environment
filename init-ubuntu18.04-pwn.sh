@@ -1,3 +1,4 @@
+#安装时镜像源手动输入http://mirrors.aliyun.com/ubuntu
 #换阿里源
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
 echo 'deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse' > /etc/apt/sources.list
@@ -13,6 +14,9 @@ echo 'deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted 
 #更新
 sudo apt-get update
 sudo apt-get -y upgrade
+#安装python 2/3
+sudo apt-get -y install python
+sudo apt-get -y install python3
 #安装vim
 sudo apt-get -y install vim
 #安装32位编译环境
@@ -37,27 +41,25 @@ cd ~/git-misc-re/capstone
 sudo make
 sudo make install
 
-#可能可以通过
-#pip install pwntools
-#直接安装
-
-#可能通过修改pwntools的setup.py更改安装源
-
-
-#安装pwntools环境
-pip install setuptools
-pip install unicorn
-pip install psutil-5.6.2
-pip install virtualenv
-pip install bcrypt
-pip install tox
-pip install pyserial
-pip install pynacl
-pip install capstone
-pip install MarkupSafe
 #安装pwntools
-mkdir ~/git-misc-re/pwntools
-sudo git clone https://github.com/Gallopsled/pwntools ~/git-misc-re/pwntools
-cd ~/git-misc-re/pwntools
-sudo python setup.py install
+pip install pwntools
+直接安装
 
+
+#无pip直接安装时安装pwntools环境
+#pip install setuptools
+#pip install unicorn
+#pip install psutil-5.6.2
+#pip install virtualenv
+#pip install bcrypt
+#pip install tox
+#pip install pyserial
+#pip install pynacl
+#pip install capstone
+#pip install MarkupSafe
+#安装pwntools
+#mkdir ~/git-misc-re/pwntools
+#sudo git clone https://github.com/Gallopsled/pwntools ~/git-misc-re/pwntools
+#cd ~/git-misc-re/pwntools
+#sudo python setup.py install
+#可能通过修改pwntools的setup.py更改安装源
