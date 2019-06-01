@@ -33,7 +33,7 @@ sudo apt -y install git
 sudo mkdir ~/git-misc-re
 #安装peda
 sudo git clone https://github.com/longld/peda.git ~/git-misc-re/peda
-sudo echo "source ~/git-misc-re/peda/peda.py" >> ~/.gdbinit
+sudo echo "source ~/git-misc-re/peda/peda.py" >> ~/.gdbinit#此代码可用于切换不同脚本
 #安装capstone
 mkdir ~/git-misc-re/capstone
 sudo git clone https://github.com/aquynh/capstone ~/git-misc-re/capstone
