@@ -43,8 +43,11 @@ sudo make install
 
 #安装pwntools
 pip install pwntools
-直接安装
 
+#安装gdb
+sudo apt-get -y install gdb 
+# 安装ROPgadget
+pip install ropgadget
 
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
