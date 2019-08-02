@@ -49,6 +49,13 @@ sudo apt-get -y install gdb
 # 安装ROPgadget
 pip install ropgadget
 
+#安装libcsearcher
+git clone https://github.com/lieanu/LibcSearcher.git
+cd LibcSearcher
+sudo python setup.py develop
+
+
+
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
 #pip install unicorn
