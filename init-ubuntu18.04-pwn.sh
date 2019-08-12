@@ -21,6 +21,7 @@ sudo apt-get -y install python3
 sudo apt-get -y install vim
 #安装32位编译环境
 sudo apt-get -y install  lib32ncurses5 lib32z1
+sudo apt-get -y install gcc-multilib
 #安装pip并换清华源
 sudo apt -y install python-pip
 mkdir ~/.pip 
