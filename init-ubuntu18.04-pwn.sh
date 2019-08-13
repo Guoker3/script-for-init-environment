@@ -54,9 +54,13 @@ sudo python setup.py develop
 
 #安装gdb
 #sudo apt-get -y install gdb 
-#安装peda
+#安装peda,gef,gdbinit
 #sudo git clone https://github.com/longld/peda.git ~/git-misc-re/peda
 #sudo echo "source ~/git-misc-re/peda/peda.py" >> ~/.gdbinit#此代码可用于切换不同脚本
+#wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh
+#echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+#wget https://raw.githubusercontent.com/gdbinit/Gdbinit/master/gdbinit
+#cp gbdinit ~/.gdbinit
 
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
