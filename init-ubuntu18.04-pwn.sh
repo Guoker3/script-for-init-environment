@@ -43,7 +43,7 @@ sudo make install
 #安装pwntools
 git clone https://github.com/Gallopsled/pwntools
 cd pwntools
-python setup.py install
+sudo python setup.py install
 
 # 安装ROPgadget
 pip install ropgadget
