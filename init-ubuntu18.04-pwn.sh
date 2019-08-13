@@ -32,9 +32,7 @@ echo 'trusted-host = pypi.tuna.tsinghua.edu.cn' >> ~/.pip/pip.conf
 sudo apt -y install git
 #建立操作文件夹
 sudo mkdir ~/git-misc-re
-#安装peda
-sudo git clone https://github.com/longld/peda.git ~/git-misc-re/peda
-sudo echo "source ~/git-misc-re/peda/peda.py" >> ~/.gdbinit#此代码可用于切换不同脚本
+
 #安装capstone
 mkdir ~/git-misc-re/capstone
 sudo git clone https://github.com/aquynh/capstone ~/git-misc-re/capstone
@@ -45,8 +43,7 @@ sudo make install
 #安装pwntools
 pip install pwntools
 
-#安装gdb
-sudo apt-get -y install gdb 
+
 # 安装ROPgadget
 pip install ropgadget
 
@@ -55,7 +52,11 @@ git clone https://github.com/lieanu/LibcSearcher.git
 cd LibcSearcher
 sudo python setup.py develop
 
-
+#安装gdb
+#sudo apt-get -y install gdb 
+#安装peda
+#sudo git clone https://github.com/longld/peda.git ~/git-misc-re/peda
+#sudo echo "source ~/git-misc-re/peda/peda.py" >> ~/.gdbinit#此代码可用于切换不同脚本
 
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
