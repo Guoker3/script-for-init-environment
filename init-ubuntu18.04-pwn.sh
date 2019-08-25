@@ -48,7 +48,8 @@ sudo python setup.py install
 # 安装ROPgadget
 pip install ropgadget
 
-#安装libcsearcher
+#安装libc-database和libcsearcher
+git clone https://github.com/lieanu/libc-database.git
 git clone https://github.com/lieanu/LibcSearcher.git
 cd LibcSearcher
 sudo python setup.py develop
