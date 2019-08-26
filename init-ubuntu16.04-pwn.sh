@@ -41,9 +41,9 @@ sudo make
 sudo make install
 
 #安装pwntools
-cd ~/git-misc-re
+cd ~
 git clone https://github.com/Gallopsled/pwntools
-cd ~/git-misc-re/pwntools
+cd ~/pwntools
 sudo python setup.py install
 
 # 安装ROPgadget
@@ -55,9 +55,9 @@ sudo gem install one_gadget
 #安装libc-database和libcsearcher
 cd ~
 git clone https://github.com/lieanu/libc-database.git
-cd ~/git-misc-re
+cd ~
 git clone https://github.com/lieanu/LibcSearcher.git
-cd ~/git-misc-re/LibcSearcher
+cd ~/LibcSearcher
 sudo python setup.py develop
 
 #拷贝各种版本libc
