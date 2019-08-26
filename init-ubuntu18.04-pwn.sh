@@ -66,6 +66,10 @@ sudo python setup.py develop
 #echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 #wget https://raw.githubusercontent.com/gdbinit/Gdbinit/master/gdbinit
 #cp gbdinit ~/.gdbinit
+#安装pwndbg
+#git clone https://github.com/pwndbg/pwndbg
+#cd pwndbg
+#sudo #./setup.sh
 
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
