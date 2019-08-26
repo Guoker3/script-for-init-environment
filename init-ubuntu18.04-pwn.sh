@@ -48,8 +48,8 @@ sudo python setup.py install
 # 安装ROPgadget
 pip install ropgadget
 #安装Ruby和one_gadget
-sudo apt install ruby
-sudo gem install one_gadget
+sudo apt install -y ruby
+sudo gem install -y one_gadget
 
 #安装libc-database和libcsearcher
 git clone https://github.com/lieanu/libc-database.git
