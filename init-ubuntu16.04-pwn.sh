@@ -41,20 +41,23 @@ sudo make
 sudo make install
 
 #安装pwntools
+cd ~/git-misc-re
 git clone https://github.com/Gallopsled/pwntools
-cd pwntools
+cd ~/git-misc-re/pwntools
 sudo python setup.py install
 
 # 安装ROPgadget
-pip install ropgadget
+pip install -y ropgadget
 #安装Ruby和one_gadget
-sudo apt install ruby
+sudo apt install -y ruby
 sudo gem install one_gadget
 
 #安装libc-database和libcsearcher
+cd ~
 git clone https://github.com/lieanu/libc-database.git
+cd ~/git-misc-re
 git clone https://github.com/lieanu/LibcSearcher.git
-cd LibcSearcher
+cd ~/git-misc-re/LibcSearcher
 sudo python setup.py develop
 
 #安装gdb
@@ -68,10 +71,10 @@ sudo python setup.py develop
 #cp gbdinit ~/.gdbinit
 
 #安装pwndbg
-git clone https://github.com/pwndbg/pwndbg
-cd pwndbg
-sudo sh setup.sh
-
+#cd ~/git-misc-re
+#git clone https://github.com/pwndbg/pwndbg
+#cd ~/git-misc-re/pwndbg
+#sudo sh setup.sh
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
 #pip install unicorn
