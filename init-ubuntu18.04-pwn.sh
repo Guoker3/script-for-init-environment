@@ -57,6 +57,11 @@ git clone https://github.com/lieanu/LibcSearcher.git
 cd LibcSearcher
 sudo python setup.py develop
 
+#拷贝各种版本libc
+cd ~
+git clone https://github.com/matrix1001/welpwn.git
+sudo cp -a ~/welpwn/PwnContext/libs ~
+
 #安装gdb
 #sudo apt-get -y install gdb 
 #安装peda,gef,gdbinit
