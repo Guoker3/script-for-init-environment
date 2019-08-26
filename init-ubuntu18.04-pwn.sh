@@ -70,7 +70,7 @@ sudo python setup.py develop
 #安装pwndbg
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
-sudo #./setup.sh
+sudo ./setup.sh
 
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
