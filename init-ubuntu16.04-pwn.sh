@@ -1,7 +1,7 @@
 #安装时镜像源手动输入http://mirrors.aliyun.com/ubuntu
 #换清华源
 sudo mv /etc/apt/sozurces.list /etc/apt/sources.list.bak
-
+#
 echo 'deb cdrom:[Ubuntu 16.04 LTS _Xenial Xerus_ - Release amd64 (20160420.1)]/ xenial main restricted' > /etc/apt/sources.list
 echo 'deb-src http://archive.ubuntu.com/ubuntu xenial main restricted #Added by software-properties' >> /etc/apt/sources.list
 echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted' >> /etc/apt/sources.list
@@ -20,7 +20,7 @@ echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted' >> 
 echo 'deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted multiverse universe #Added by software-properties' >> /etc/apt/sources.list
 echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-security universe' >> /etc/apt/sources.list
 echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse' >> /etc/apt/sources.list
-
+#
 #更新
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -42,26 +42,26 @@ echo 'trusted-host = pypi.tuna.tsinghua.edu.cn' >> ~/.pip/pip.conf
 sudo apt -y install git
 #建立操作文件夹
 sudo mkdir ~/git-misc-re
-
+#
 #安装capstone
 mkdir ~/git-misc-re/capstone
 sudo git clone https://github.com/aquynh/capstone ~/git-misc-re/capstone
 cd ~/git-misc-re/capstone
 sudo make
 sudo make install
-
+#
 #安装pwntools
 cd ~
 git clone https://github.com/Gallopsled/pwntools
 cd ~/pwntools
 sudo python setup.py install
-
+#
 # 安装ROPgadget
 pip install -y ropgadget
 #安装Ruby和one_gadget
 sudo apt install -y ruby
 sudo gem install one_gadget
-
+#
 #安装libc-database和libcsearcher
 cd ~
 git clone https://github.com/lieanu/libc-database.git
@@ -69,12 +69,12 @@ cd ~
 git clone https://github.com/lieanu/LibcSearcher.git
 cd ~/LibcSearcher
 sudo python setup.py develop
-
+#
 #拷贝各种版本libc
 cd ~
 git clone https://github.com/matrix1001/welpwn.git
 sudo cp -a ~/welpwn/PwnContext/libs ~
-
+#
 #安装gdb
 #sudo apt-get -y install gdb 
 #安装peda,gef,gdbinit
@@ -84,7 +84,7 @@ sudo cp -a ~/welpwn/PwnContext/libs ~
 #echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 #wget https://raw.githubusercontent.com/gdbinit/Gdbinit/master/gdbinit
 #cp gbdinit ~/.gdbinit
-
+#
 #安装pwndbg
 #cd ~/git-misc-re
 #git clone https://github.com/pwndbg/pwndbg
