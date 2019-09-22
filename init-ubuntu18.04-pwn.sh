@@ -32,36 +32,36 @@ echo 'trusted-host = pypi.tuna.tsinghua.edu.cn' >> ~/.pip/pip.conf
 sudo apt -y install git
 #建立操作文件夹
 sudo mkdir ~/git-misc-re
-
+#
 #安装capstone
 mkdir ~/git-misc-re/capstone
 sudo git clone https://github.com/aquynh/capstone ~/git-misc-re/capstone
 cd ~/git-misc-re/capstone
 sudo make
 sudo make install
-
+#
 #安装pwntools
 git clone https://github.com/Gallopsled/pwntools
 cd pwntools
 sudo python setup.py install
-
+#
 # 安装ROPgadget
 pip install ropgadget
 #安装Ruby和one_gadget
 sudo apt install -y ruby
 sudo gem install one_gadget
-
+#
 #安装libc-database和libcsearcher
 git clone https://github.com/lieanu/libc-database.git
 git clone https://github.com/lieanu/LibcSearcher.git
 cd LibcSearcher
 sudo python setup.py develop
-
+#
 #拷贝各种版本libc
 cd ~
 git clone https://github.com/matrix1001/welpwn.git
 sudo cp -a ~/welpwn/PwnContext/libs ~
-
+#
 #安装gdb
 #sudo apt-get -y install gdb 
 #安装peda,gef,gdbinit
@@ -71,12 +71,12 @@ sudo cp -a ~/welpwn/PwnContext/libs ~
 #echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 #wget https://raw.githubusercontent.com/gdbinit/Gdbinit/master/gdbinit
 #cp gbdinit ~/.gdbinit
-
+#
 #安装pwndbg
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 sudo sh setup.sh
-
+#
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
 #pip install unicorn
