@@ -40,13 +40,12 @@ echo 'index-url = https://pypi.tuna.tsinghua.edu.cn/simple' >> ~/.pip/pip.conf
 echo 'trusted-host = pypi.tuna.tsinghua.edu.cn' >> ~/.pip/pip.conf
 #安装git
 sudo apt -y install git
-#建立操作文件夹
-sudo mkdir ~/git-misc-re
+git config --global user.name 'Guoker3'
+git config --global user.email '245266575@qq.com'
 #
 #安装capstone
-mkdir ~/git-misc-re/capstone
-sudo git clone https://github.com/aquynh/capstone ~/git-misc-re/capstone
-cd ~/git-misc-re/capstone
+sudo git clone https://github.com/aquynh/capstone
+cd capstone
 sudo make
 sudo make install
 #
@@ -57,7 +56,9 @@ cd ~/pwntools
 sudo python setup.py install
 #
 # 安装ROPgadget
-pip install -y ropgadget
+git clone https://github.com/JonathanSalwan/ROPgadget.git 
+cd ROPgadget 
+sudo python setup.py install
 #安装Ruby和one_gadget
 sudo apt install -y ruby
 sudo gem install one_gadget
@@ -75,8 +76,6 @@ cd ~
 git clone https://github.com/matrix1001/welpwn.git
 sudo cp -a ~/welpwn/PwnContext/libs ~
 #
-#安装gdb
-#sudo apt-get -y install gdb 
 #安装peda,gef,gdbinit
 #sudo git clone https://github.com/longld/peda.git ~/git-misc-re/peda
 #sudo echo "source ~/git-misc-re/peda/peda.py" >> ~/.gdbinit#此代码可用于切换不同脚本
@@ -86,9 +85,8 @@ sudo cp -a ~/welpwn/PwnContext/libs ~
 #cp gbdinit ~/.gdbinit
 #
 #安装pwndbg
-#cd ~/git-misc-re
 #git clone https://github.com/pwndbg/pwndbg
-#cd ~/git-misc-re/pwndbg
+#cd pwndbg
 #sudo sh setup.sh
 #无pip直接安装时安装pwntools环境
 #pip install setuptools
