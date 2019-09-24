@@ -30,6 +30,8 @@ echo 'index-url = https://pypi.tuna.tsinghua.edu.cn/simple' >> ~/.pip/pip.conf
 echo 'trusted-host = pypi.tuna.tsinghua.edu.cn' >> ~/.pip/pip.conf
 #安装git
 sudo apt -y install git
+git config --global user.name 'Guoker3'
+git config --global user.email '245266575@qq.com'
 #建立操作文件夹
 sudo mkdir ~/git-misc-re
 #
