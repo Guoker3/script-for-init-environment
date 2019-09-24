@@ -14,3 +14,4 @@ warning:
 
         using my private account in 'git config',may it be more fast,change if need. 
         the source chosen works and only works well in China ,mainland.But change it however. 
+        don't kill me if you forget to take a snapshot.
