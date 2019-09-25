@@ -75,7 +75,10 @@ sudo python setup.py develop
 cd ~
 git clone https://github.com/matrix1001/welpwn.git
 sudo cp -a ~/welpwn/PwnContext/libs ~
-#
+#安装pwndbg
+git clone https://github.com/pwndbg/pwndbg
+cd pwndbg
+./setup.sh
 #安装peda,gef,gdbinit
 #sudo git clone https://github.com/longld/peda.git ~/git-misc-re/peda
 #sudo echo "source ~/git-misc-re/peda/peda.py" >> ~/.gdbinit#此代码可用于切换不同脚本
