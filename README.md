@@ -1,4 +1,4 @@
-# script-for-init-environment-in-China   developing
+# script-for-init-environment-in-China   
 # exec_oneByOne TRY-TO-FIX
 # change_source WITHOUT A WORD
 
