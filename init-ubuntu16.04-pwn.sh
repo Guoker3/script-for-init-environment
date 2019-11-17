@@ -55,6 +55,9 @@ git clone https://github.com/Gallopsled/pwntools
 cd ~/pwntools
 sudo python setup.py install
 #
+#gdb
+sudo apt-get install gcc gcc-arm-linux-gnueabi binutils-arm-linux-gnueabi qemu-user gdb-multiarch
+#
 # 安装ROPgadget
 git clone https://github.com/JonathanSalwan/ROPgadget.git 
 cd ROPgadget 
