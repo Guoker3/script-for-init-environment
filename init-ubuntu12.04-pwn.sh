@@ -41,6 +41,7 @@ sudo make
 sudo make install
 
 #安装gdb
+sudo apt-get install gcc gcc-arm-linux-gnueabi binutils-arm-linux-gnueabi qemu-user gdb-multiarch
 #sudo apt-get -y install gdb 
 #安装peda,gef,gdbinit
 sudo git clone https://github.com/longld/peda.git ~/git-misc-re/peda
