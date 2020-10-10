@@ -1,6 +1,6 @@
 # script-for-init-environment-in-China   (bettering)
 # exec_oneByOne TRY-TO-FIX
-# change_source WITHOUT A WORD
+# change_source WITHOUT A WORDS
 
 Personal Use:
         
